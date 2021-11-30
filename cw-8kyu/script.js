@@ -15,13 +15,13 @@ function fruitName (n) {
     console.log(a)
     
     console.log(summ)
-  }
+}
   
-  fruitName(325)
+fruitName(325)
   
   
-  function code (letter) {
-    const ascii = {
+function code (letter) {
+  const ascii = {
       "": "31",      " ": "32",     "!": "33",     "\"": "34",    "#": "35",    
       "$": "36",     "%": "37",     "&": "38",     "'": "39",     "(": "40",    
       ")": "41",     "*": "42",     "+": "43",     ",": "44",     "-": "45",    
@@ -321,3 +321,13 @@ function fruitName (n) {
   };
   
   removeChar('eloquent')
+
+  // Boolean to String
+
+  function booleanToString(b){
+    return b.toString()
+  }
+
+  function boolToWord( bool ){
+    return bool === true ? 'Yes' : 'No'
+   }
