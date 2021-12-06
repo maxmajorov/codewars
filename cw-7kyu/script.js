@@ -1,46 +1,4 @@
-function pyramid(balls) {
-  
-    let row = 0
-    let temp = 0
-  
-    do {
-      
-      if (balls > 0) {
-        temp = temp + 1
-        balls = balls - temp
-        row += 1
-        console.log(balls)
-  
-        if (balls < 0) {
-          row = row-1
-        }
-      } 
-  
-    } while (balls > 0)
-  
-    console.log(row)
-  
-  }
-  
-  pyramid(4)
-  
-  //Число длинны n которое при сумме цифр в n степени равно самому себе
-  
-  function isNarcissistic(n){
-    
-    let arrNum = n.toString().split('')
-  
-    let numPow = arrNum.map(el => el ** arrNum.length).reduce((a, b) => a + b)
-  
-    let a = numPow === n ? true : false
-  
-    console.log(a)
-  }
-  
-  isNarcissistic(153)
-  isNarcissistic(435)
-  
-  
+
   function reverseNumber(n) {
   
     let a = n.toString().split('')
@@ -97,5 +55,10 @@ function pyramid(balls) {
   }
   
   overTheRoad(2,3) // 8
+
+
+  function breakChocolate(n,m) {
+    return n > 0 && m > 0 ? n * m - 1 : 0;
+  }
   
   
