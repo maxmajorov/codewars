@@ -1,0 +1,1 @@
+const zeroFuel = (distToPump, mpg, fuelLeft) => fuelLeft * mpg >= distToPump 
